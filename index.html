@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperial Shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+background:#0b0b0b;
+color:white;
+font-family:'Montserrat',sans-serif;
+}
+
+header{
+text-align:center;
+padding:50px 20px;
+border-bottom:1px solid #333;
+}
+
+.logo{
+width:170px;
+margin-bottom:15px;
+}
+
+.brand{
+font-family:'Playfair Display',serif;
+letter-spacing:8px;
+font-size:42px;
+color:#d4af37;
+}
+
+.slogan{
+margin-top:10px;
+font-size:16px;
+color:#ddd;
+letter-spacing:2px;
+}
+
+.hero{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(to bottom,#000,#111);
+}
+
+.hero h1{
+font-size:44px;
+margin-bottom:15px;
+font-family:'Playfair Display',serif;
+}
+
+.hero p{
+color:#bbb;
+font-size:18px;
+}
+
+.products{
+padding:60px 40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#141414;
+border-radius:18px;
+overflow:hidden;
+transition:0.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.7);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.price{
+color:#d4af37;
+font-weight:600;
+font-size:18px;
+}
+
+.buy-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
+font-size:14px;
+}
+
+.buy-btn:hover{
+background:#d4af37;
+color:black;
+}
+
+.contact{
+text-align:center;
+padding:60px 20px;
+border-top:1px solid #222;
+}
+
+.contact h2{
+font-family:'Playfair Display',serif;
+margin-bottom:10px;
+font-size:30px;
+color:#d4af37;
+}
+
+.contact p{
+color:#ccc;
+margin-bottom:20px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+padding:14px 26px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.05);
+}
+
+footer{
+margin-top:40px;
+padding:25px;
+text-align:center;
+color:#888;
+border-top:1px solid #222;
+}
+
+/* BOTON FLOTANTE WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#d4af37;
+color:black;
+padding:15px 18px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" class="logo">
+<div class="brand">IMPERIAL</div>
+<div class="slogan">Viste original, paga menos</div>
+</header>
+
+<section class="hero">
+<h1>Ropa original de marca</h1>
+<p>Encuentra ropa de marca a precios accesibles</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="playera-adidas.jpg" alt="Playera Adidas">
+<div class="card-content">
+<h3>Playera Adidas</h3>
+<div class="price">$250 MXN</div>
+<a class="buy-btn" href="https://wa.me/521563427266">Comprar por WhatsApp</a>
+</div>
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Compra por WhatsApp</h2>
+<p>Contáctanos para apartar tu producto</p>
+<a class="whatsapp-btn" href="https://wa.me/52563427266">Enviar mensaje</a>
+</section>
+
+<footer>
+© 2026 Imperial Shop
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/52563427266">WhatsApp</a>
+
+</body>
+</html>
